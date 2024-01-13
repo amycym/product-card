@@ -39,17 +39,13 @@ body{
 }
 
 /* mobile-size */
-@media (max-width: 400px){
+@media (100px <= width <= 400px){
     body{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
         padding: 3em;
+        margin: 15%;
     }
     .product-perfume{
-        background-image: url(../img/image-product-mobile.jpg);
+        background-image: url(/img/image-product-mobile.jpg);
         display: block;
         border-radius: 10px 10px 0 0;
     }
@@ -60,9 +56,7 @@ body{
        border-radius: 10px;
     }
     .product-ctn{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        padding-bottom: 20px;
     }
 }
 
