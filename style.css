@@ -11,28 +11,116 @@
     --font-fraunces: "Fraunces", serif;
 }
 
-*{
+*,
+*::before,
+*::after{
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    max-height: 100vh;
+*{
+    margin: 0;
 }
 
+body{
+    background-color: var(--crl-prima-cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    height: 100vh;
+}
+
+.product-perfume {
+    max-width: 300px;
+    border-radius: 10px 0 0 10px;
+    display: block;
+}
+
+/* styles */
 .product-crd{
     display: flex;
+    justify-content: center;
+    background-color: var(--crl-neu-white);
+    width: 600px;
+    border-radius: 10px;
 }
 
 .product-ctn{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 10px 30px 0 30px;
+}
+
+.pro-cator{
+    font-family: var(--font-montserrat);
+    color: var(--crl-neu-grayblue);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.pro-name{
+    font-family: var(--font-fraunces);
+    font-weight: 700;
+    color: var(--crl-neu-drkblue);
+    line-height: 1em;
+    text-wrap: balance;
+}
+
+.product-ctn > *{
+    margin: 10px 5px 10px 0;
+}
+
+.pro-desc{
+    font-family: var(--font-montserrat);
+    color: var(--crl-neu-grayblue);
+    font-weight: 500;
+    font-size: 14px;
+    text-wrap: balance;
+    line-height: 1.5em;
+}
+
+.product-price, h1, p{
+    display: inline;
+    font-family: var(--font-fraunces);
 }
 
 .product-price{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    margin: 15px 30px 30px 0;
+}
+
+.product-disc{
+    color: var(--crl-prima-drkcyan);
+}
+
+.product-ori{
+    color: var(--crl-neu-grayblue);
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.btn{
+    font-family: var(--font-montserrat);
+    background: var(--crl-prima-drkcyan);
+    width: 16em;
+    border: none;
+    border-radius: 10px;
+    color: var(--crl-neu-white);
+    padding: 15px;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background: hsl(158, 30%, 29%);
+    cursor: pointer;
+}
+
+.product-cart{
+    padding: 0 10px 0 0;
 }
