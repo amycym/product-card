@@ -1,5 +1,38 @@
 /* font-family: "Montserrat", sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
-
 /* font-family: "Fraunces", serif; */
+:root{
+    --crl-prima-drkcyan: hsl(158, 36%, 37%);
+    --crl-prima-cream: hsl(30, 38%, 92%);
+    --crl-neu-drkblue: hsl(212, 21%, 14%);
+    --crl-neu-grayblue: hsl(228, 12%, 48%);
+    --crl-neu-white: hsl(0, 0%, 100%);
 
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-fraunces: "Fraunces", serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    max-height: 100vh;
+}
+
+.product-crd{
+    display: flex;
+}
+
+.product-ctn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.product-price{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
