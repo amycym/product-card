@@ -38,6 +38,35 @@ body{
     display: block;
 }
 
+/* mobile-size */
+@media (max-width: 400px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 3em;
+    }
+    .product-perfume{
+        background-image: url(../img/image-product-mobile.jpg);
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+    .product-crd{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       border-radius: 10px;
+    }
+    .product-ctn{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
 /* styles */
 .product-crd{
     display: flex;
