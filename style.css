@@ -45,7 +45,7 @@ body{
         margin: 15%;
     }
     .product-perfume{
-        background-image: url(/img/image-product-mobile.jpg);
+        background-image: url("/img/image-product-mobile.jpg");
         display: block;
         border-radius: 10px 10px 0 0;
     }
